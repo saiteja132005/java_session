@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="100.jpg" alt="logo" class="logo" />
+    <h1 class="text">PRODUCTO</h1>
+  </header>
+
+  <section class="list">
+    <div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Products">Products</a></li>
+        <li><a href="#About">About</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <main>
+    <h1>Product Form</h1>
+    <div class="inputs">
+      <input type="text" name="productid" id="productid" placeholder="Product ID" class="gap" />
+      <input type="text" name="productname" id="productname" placeholder="Product Name" class="gap" />
+      <input type="number" name="price" id="price" placeholder="price" class="gap" />
+      <input type="number" name="qty" id="qty" placeholder="Quantity" class="gap" />
+      <button id="addBtn" class="gap" onclick="addOrUpdateProduct()">Add Product</button><br />
+      <button id="displayBtn" class="display" onclick="displayProducts()">Display Products</button>
+    </div>
+
+    <table id="productTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    </thead>
+      <tbody>
+        <!-- Product rows go here -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; Developed by Saiteja Reserved&trade;</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
